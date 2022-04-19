@@ -24,9 +24,9 @@ Fuerza bruta:
 
 Algoritmo voraz por bisección:
 
-   def f(x):#1
-       y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70#1
-       return y#1
+    def f(x):#1
+        y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70#1
+        return y#1
 
 
      def biseccion(inicio,fin):#log n
