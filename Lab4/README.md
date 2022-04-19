@@ -24,27 +24,27 @@ Fuerza bruta:
 
 Algoritmo voraz por bisección:
 
-def f(x):#1
-    y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70#1
-    return y#1
+  def f(x):#1
+      y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70#1
+      return y#1
 
 
-def biseccion(inicio,fin):#log n
+  def biseccion(inicio,fin):#log n
 
-    limInferior = inicio#1
-    limSuperior = fin#1
+      limInferior = inicio#1
+      limSuperior = fin#1
 
-    while (abs(limInferior-limSuperior) > (0.0001)): #log n
-        limInferior=limSuperior #1
-        limSuperior=(inicio+fin)/2 #1 #Produce el log n (base 2) en el while
+      while (abs(limInferior-limSuperior) > (0.0001)): #log n
+          limInferior=limSuperior #1
+          limSuperior=(inicio+fin)/2 #1 #Produce el log n (base 2) en el while
 
-        if (f(inicio)*f(limSuperior)<0):#1
-            fin=limSuperior#1
+          if (f(inicio)*f(limSuperior)<0):#1
+              fin=limSuperior#1
 
-        if (f(limSuperior)*f(fin)<0):#1
-            inicio=limSuperior#1
+          if (f(limSuperior)*f(fin)<0):#1
+              inicio=limSuperior#1
 
-    limSuperior=round(limSuperior,4)#1
-    print(limSuperior)#1
+      limSuperior=round(limSuperior,4)#1
+      print(limSuperior)#1
 
-biseccion(-1000,1000)#log n
+  biseccion(-1000,1000)#log n
