@@ -11,40 +11,40 @@ Laboratorio #4: El presente laboratorio busca desarrollar dos funciones que hall
 
 Fuerza bruta:
 
-    import numpy as np #1
+    import numpy as np #O(1)
+    
+    def f(x): #O(1) + O(1) + O(1) -->  O(1)
+        y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70  #O(1)
+        return y  #O(1)
 
-    def f(x):#1
-        y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70#1
-        return y#1
-
-    for i in np.arange(-1000,1000-0.0001,0.0001).round(4):#n
-        if((f(i)*f(i+0.0001))<0 or f(i)==0):#1
-            print(i)#1
+    for i in np.arange(-1000,1000-0.0001,0.0001).round(4): #O(n)   
+        if((f(i)*f(i+0.0001))<0 or f(i)==0): #O(1)   
+            print(i) #O(1)    
 
 
 Algoritmo voraz por bisección:
 
-    def f(x):#1
-        y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70#1
-        return y#1
+    def f(x): #O(1)
+        y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70 #O(1)
+        return y #O(1)
 
 
-     def biseccion(inicio,fin):#log n
+     def biseccion(inicio,fin): # O(Log n)
 
-         limInferior = inicio#1
-         limSuperior = fin#1
+         limInferior = inicio #O(1)
+         limSuperior = fin #O(1)
 
-         while (abs(limInferior-limSuperior) > (0.0001)): #log n
-             limInferior=limSuperior #1
-             limSuperior=(inicio+fin)/2 #1 #Produce el log n (base 2) en el while
+         while (abs(limInferior-limSuperior) > (0.0001)): #O(Log n)
+             limInferior=limSuperior  #O(1)
+             limSuperior=(inicio+fin)/2  #O(1) #Produce el log n (base 2) en el while
 
-            if (f(inicio)*f(limSuperior)<0):#1
-                 fin=limSuperior#1
+            if (f(inicio)*f(limSuperior)<0): #O(1)
+                 fin=limSuperior #O(1)
 
-            if (f(limSuperior)*f(fin)<0):#1
-                 inicio=limSuperior#1
+            if (f(limSuperior)*f(fin)<0): #O(1)
+                 inicio=limSuperior #O(1)
 
-         limSuperior=round(limSuperior,4)#1
-         print(limSuperior)#1
+         limSuperior=round(limSuperior,4) #O(1)
+         print(limSuperior) #O(1)
 
-     biseccion(-1000,1000)#log n
+     biseccion(-1000,1000) #O(Log n)
