@@ -11,19 +11,30 @@ Laboratorio #4: El presente laboratorio busca desarrollar dos funciones que hall
 
 Fuerza bruta:
 
+    import time #O(1)
+
+    start = time.time() #O(1)
+
     import numpy as np #O(1)
     
-    def f(x): #O(1) + O(1) + O(1) -->  O(1)
+    def f(x): #O(1)
         y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70  #O(1)
         return y  #O(1)
 
     for i in np.arange(-1000,1000-0.0001,0.0001).round(4): #O(n)   
         if((f(i)*f(i+0.0001))<0 or f(i)==0): #O(1)   
             print(i) #O(1)    
+    
+    stop = time.time() #O(1)
 
+    print(stop-start) #O(1)
 
 Algoritmo voraz por bisección:
 
+    import time #O(1)
+
+    start = time.time() #O(1)
+    
     def f(x): #O(1)
         y=(x**5)-(59*(x**4))+(35*(x**3))-(250*(x**2))+(x)-70 #O(1)
         return y #O(1)
@@ -48,3 +59,7 @@ Algoritmo voraz por bisección:
          print(limSuperior) #O(1)
 
      biseccion(-1000,1000) #O(Log n)
+        
+     stop = time.time() #O(1)
+
+     print(stop-start) #O(1)
