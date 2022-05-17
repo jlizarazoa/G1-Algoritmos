@@ -1,0 +1,20 @@
+Propuesta de proyecto
+- Juliette Sofia Lizarazo Ardila
+- Juan Pablo Caicedo Rodriguez
+- Juan Eduardo Bedoya Torres
+- Valentina Colmenares Leguizamo
+- Luis Alfonso Diaz Vergel
+
+- Definición del problema: Se quiere realizar un programa que permita hallar las distintas maneras en que un grupo de palabras pueden organizarse teniendo en cuenta 
+dos condiciones: dos palabras con el mismo número de letras no pueden estar seguidas, y dos palabras pueden ser contiguas únicamente si comparten sólo una letra.
+
+- Fuente de los datos: Palabras aleatorias extraídas de textos virtuales (libros, artículos, páginas web, etc).
+
+- Objetivo de la solución: Emitir todas las formas en que se pueden organizar las palabras que se dieron como input bajo las condiciones mencionadas más arriba.
+
+
+Ideas alternativas:
+- Algoritmo criptográfico: Diseñar un algoritmo para encriptar imágenes o texto.
+- Organización de palabras (ejercicio de clase).
+- Análisis de imágenes: Diseño e un algoritmo que permita el análisis o edición de imágenes.
+- Algoritmos en juegos de azar: Diseño y funcionamiento de un juego de azar, análisis de un juego de azar.
