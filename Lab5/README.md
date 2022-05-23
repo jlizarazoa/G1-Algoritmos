@@ -12,6 +12,9 @@ Integrantes:
   Y experimentamos y gráficamos las siguientes funciones: 
   
   f(x) = x 
+  
   f(x) = cos(x)+5
+  
   f(x) = sen(x)+45+x*7
+  
   f(x) = -(0.1+(1-x)^2-0.1*cos(6*pi*(1-x)))+10
